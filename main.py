@@ -45,8 +45,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",  # Vite dev server
         "http://localhost:3000",  # Alternative dev port
-        "https://welfare-assistant-frontend.vercel.app",  # Vercel deployment (update with your actual URL)
-        "*"  # Allow all origins for now (restrict in production)
+        "http://localhost:4173",  # Vite preview server
+        "*"  # Allow all origins for production
     ],
     allow_credentials=True,
     allow_methods=["*"],
